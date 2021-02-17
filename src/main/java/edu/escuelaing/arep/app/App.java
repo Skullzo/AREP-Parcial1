@@ -29,7 +29,7 @@ public class App {
         String lugar = req.queryParams("lugar");
         System.out.println(lugar);
         Conexion cs = new Conexion();
-        String j = cs.HTTPConnection(lugar);
+        String j = Conexion.HTTPConnection(lugar);
         System.out.println(j);
         return j;
     }
