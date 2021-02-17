@@ -1,6 +1,7 @@
 # Taller de Verificación de Conocimientos Técnicos
 ## Requerimientos
 Su compañía lo ha seleccionado para construir un simple webservice desplegada en Heroku para uno de los clientes más importantes.
+
 Así, han decidido que usted debe construir un webservice  para consultar el estado del clima en lugares específicos de la tierra.  La aplicación recibirá en un campo la descripción de una ciudad, por ejemplo “London” para Londres   y deberá mostrar la información del clima para esa ciudad. Para esto utilice el API gratuito de https://openweathermap.org/ (Puede crear una cuenta para obtener la llave para realizar consultas). Se le pide que su implementación sea eficiente en cuanto a recursos así que debe implementar un caché que permita evitar hacer consultas repetidas al API externo. La petición debe pasar por su servicio web desplegado en Heroku, es decir desde su servicio en heroku se debe invocar el servicio web de clima. el usuario no sabrá que servicio estña usted invocando por detrás. Utilice el servicio "Current Weather Data".
 
 Debe usar spark o sockets.
