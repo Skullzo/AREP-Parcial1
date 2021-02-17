@@ -26,50 +26,12 @@ public class App {
     * @return pageContent Retorna la pagina HTML que contiene la interfaz de usuario.
     */
     private static String inputDataPage(Request req, Response res) {
-        String pageContent
-                = "<!DOCTYPE html>"
-                + "<html>"
-                + "<title>Calculadora de Media y Desviacion Estandar</title>"
-                + "<body style = \"background: url(https://blog.hdwallsource.com/wp-content/uploads/2017/05/desk-calculator-wallpaper-61252-63066-hd-wallpapers.jpg) no-repeat ; background-size: 100% 111%;\">"
-                + "</body>"
-                + "<body>"
-                + "<div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:500%; position:absolute ; top:0px ; left:0px\">"
-        		+ "Calculadora"
-        	    + "</div>"
-                + "<form action=\"/results\">"
-                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
-        		+ "Ingrese los numeros separados por una coma sin espacios."
-        	    + "</div>"
-                + "<input style=\"width:500px ; font-size:150% ; position:absolute ; top:237px ; text-align:center; left:0px\" type=\"text\" name=\"Datos\">"
-                + "<br><br>"
-                + "<input style=\"width:508px ; font-size:150% ; position:absolute ; top:272px ; text-align:center; left:0px\" type=\"submit\" value=\"Calcular Media y Desviacion Estandar\">"
-                + "</form>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "<br><br>"
-                + "</body>"
-                + "</html>";
-        return pageContent;
+        String lugar = req.queryParams("lugar");
+        System.out.println(lugar);
+        Conexion cs = new Conexion();
+        String j = cs.HTTPConnection(lugar);
+        System.out.println(j);
+        return j;
     }
    /**
     * Este metodo lee el puerto predeterminado segun lo especificado por la variable PORT en el entorno.
