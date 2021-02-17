@@ -5,7 +5,7 @@ import static spark.Spark.*;
 /**
  * Clase principal encargada de llevar a cabo la ejecucion de todo el programa.
  * @author  Alejandro Toro Daza
- * @version 1.0.  (20 de Enero del 2021) 
+ * @version 1.0.  (17 de Febrero del 2021) 
  */
 public class App {
     /**
@@ -23,7 +23,7 @@ public class App {
    /**
     * @param req Parametro que se encarga de almacenar la informacion de la peticion.
     * @param res Parametro que se encarga de almacenar la informacion de la respuesta del servidor.
-    * @return pageContent Retorna la pagina HTML que contiene la interfaz de usuario.
+    * @return j Retorna el servicio de openweathermap denominado "Current Weather Data" directamente desde la API de OpenWeahterMap.
     */
     private static String inputDataPage(Request req, Response res) {
         String lugar = req.queryParams("lugar");
