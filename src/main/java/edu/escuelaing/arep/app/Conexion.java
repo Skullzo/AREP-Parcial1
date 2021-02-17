@@ -13,7 +13,7 @@ public class Conexion {
 	public String HTTPConnection(String lugar){
         StringBuilder rta = new StringBuilder();
         try {
-            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q="+lugar+"appid=7ace76b0d48d2c7a11df2ff9ae63bb02");
+            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q="+lugar+"appid=e628214cfe83ce10a80c350ba9ef00f0");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
