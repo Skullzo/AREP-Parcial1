@@ -51,7 +51,7 @@ Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Si
 ## Desplegar en Heroku
 Para desplegar el programa en Heroku, se debe realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku. 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://arep-lab3.herokuapp.com/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://arep-parcial01.herokuapp.com/)
 
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
