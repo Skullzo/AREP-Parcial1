@@ -30,7 +30,7 @@ public class App {
         System.out.println(lugar);
         Conexion cs = new Conexion();
         String j = cs.HTTPConnection(lugar);
-        System.out.println(j);
+        System.out.println(j.toString());
         return j;
     }
    /**
