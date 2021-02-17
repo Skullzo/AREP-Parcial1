@@ -51,7 +51,7 @@ Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Si
 ## Desplegar en Heroku
 Para desplegar el programa en Heroku, se debe realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku. 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://arep-parcial01.herokuapp.com/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://arep-parcial01.herokuapp.com/clima?lugar=bogota)
 
 * Para desplegar en Heroku, se debe agregar al final de la URL de Heroku el siguiente recurso, con el nombre de la ciudad después del "=": ```/clima?lugar=bogota```, por ejemplo: https://arep-parcial01.herokuapp.com/clima?lugar=bogota.
 
